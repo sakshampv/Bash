@@ -19,6 +19,6 @@ if [ "$?" = "0" ];
 else
   "$?"="-1"
   echo 1>&2
-  exit -1
+  exit 1
   
 fi
