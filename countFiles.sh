@@ -5,7 +5,7 @@ var=0
 INPUT="$1"
 #OLDIFS=$IFS
 #IFS="\t"
-[ ! -f $INPUT ] && { echo "$INPUT file not found"; exit -1; }
+[ ! -f $INPUT ] && { echo "$INPUT file not found"; exit 1; }
 while read num sign
 do
 	if [ $sign = "+" ]
